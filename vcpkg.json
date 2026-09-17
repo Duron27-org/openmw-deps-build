@@ -12,6 +12,7 @@
     },
     "ffmpeg",
     "freetype",
+    "glad",
     "icu",
     "luajit",
     "lz4",

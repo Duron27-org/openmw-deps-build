@@ -9,6 +9,7 @@
   "dependencies": [
     "collada-dom",
     "freetype",
+    "glad",
     "libiconv",
     "libjpeg-turbo",
     "libpng",

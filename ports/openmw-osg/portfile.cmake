@@ -12,24 +12,27 @@ if(VCPKG_TARGET_IS_OSX)
 elseif(VCPKG_TARGET_IS_ANDROID)
     list(
       APPEND PATCHES
-      "android/disable-polygon-offset.patch"
+      "android/remove-lib-prefix-from-plugins.patch"
       "android/fix-freetype-include-dirs.patch"
       "android/0001-Replace-Atomic-impl-with-std-atomic.patch"
       "android/0002-BufferObject-make-numClients-atomic.patch"
       "android/0004-IncrementalCompileOperation-wrap-some-stuff-in-atomi.patch"
       "android/force-add-plugins.patch"
       "android/dae_collada.patch"
-      "android/GLES3.patch"
-      "android/custom-uniforms-for-fog-and-materials.patch"
-      "android/0005-CullSettings-make-inheritanceMask-atomic-to-silence.patch"
+      "android/features.patch"
+      "android/textures.patch"
+      "android/msaa.patch"
+      "android/glad.patch"
+      "android/0005-CullSettings-make-inheritanceMask-atomic-to-silence-.patch"
+      "android/silence-clipplane-warning.patch"
     )
 endif()
 
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO openmw/osg
-    REF 8aa8d91747ff414ab0de19aae1e0dbd739acea2c
-    SHA512 698372ddf8751a927f8f6bd71d67bd9428e9e12207b8f40f8aa13e5e84bd1e8db8fc6c6bbeb5f7e930d78915d5d3570463dbfc9e44dc155e0475a374f39a6280
+    REF 638f0a1e73687633fd99bf110d04226e78ff69c6
+    SHA512 aea196550f02974d6d09291c5d83b51ca6a03b3767e234a8c0e21322927d1e12
     HEAD_REF 3.6
     PATCHES ${PATCHES}
 )
