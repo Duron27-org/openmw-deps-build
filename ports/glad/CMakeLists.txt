@@ -15,4 +15,4 @@ install(TARGETS glad EXPORT gladTargets
     ARCHIVE DESTINATION lib
 )
 
-install(DIRECTORY include/ DESTINATION include)
+install(DIRECTORY include/glad DESTINATION include)
