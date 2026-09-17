@@ -12,7 +12,6 @@ if(VCPKG_TARGET_IS_OSX)
 elseif(VCPKG_TARGET_IS_ANDROID)
     list(
       APPEND PATCHES
-      "android/remove-lib-prefix-from-plugins.patch"
       "android/fix-freetype-include-dirs.patch"
       "android/0001-Replace-Atomic-impl-with-std-atomic.patch"
       "android/0002-BufferObject-make-numClients-atomic.patch"
