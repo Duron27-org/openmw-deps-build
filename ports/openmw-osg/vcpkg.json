@@ -12,7 +12,9 @@
     {
       "name": "glad",
       "platform": "android",
-      "features": "gles2-api-latest"
+      "features": [
+        "gles2-api-latest"
+      ]
     },
     "libiconv",
     "libjpeg-turbo",
