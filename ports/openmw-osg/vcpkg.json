@@ -11,11 +11,16 @@
     {
       "name": "freetype",
       "default-features": false,
+      "features": [
+        "bzip2",
+        "png",
+        "zlib"
+      ],
       "platform": "android | ios"
     },
     {
       "name": "freetype",
-      "platform": "!android | !ios"
+      "platform": "!android & !ios"
     },
     {
       "name": "glad",
