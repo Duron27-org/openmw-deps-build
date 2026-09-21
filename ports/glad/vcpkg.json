@@ -5,6 +5,14 @@
   "description": "Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.",
   "homepage": "https://github.com/Dav1dde/glad",
   "license": null,
+  "features": {
+    "gles2-api-latest": {
+      "description": "GLES 3.2 support"
+    },
+    "gles2-api-32": {
+      "description": "GLES 3.2 support"
+    }
+  },
   "dependencies": [
     {
       "name": "vcpkg-cmake",
