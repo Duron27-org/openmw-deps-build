@@ -10,8 +10,30 @@
         "multithreading"
       ]
     },
-    "ffmpeg",
-    "freetype",
+    {
+      "name": "ffmpeg",
+      "default-features": false,
+      "features": [
+        "avcodec",
+        "avformat",
+        "swresample",
+        "swscale"
+      ],
+      "platform": "android | ios"
+    },
+    {
+      "name": "ffmpeg",
+      "platform": "!android & !ios"
+    },
+    {
+      "name": "freetype",
+      "default-features": false,
+      "platform": "android | ios"
+    },
+    {
+      "name": "freetype",
+      "platform": "!android & !ios"
+    },
     {
       "name": "glad",
       "platform": "android"
