@@ -8,7 +8,15 @@
   "supports": "!uwp",
   "dependencies": [
     "collada-dom",
-    "freetype",
+    {
+      "name": "freetype",
+      "default-features": false,
+      "platform": "android | ios"
+    },
+    {
+      "name": "freetype",
+      "platform": "!android | !ios"
+    },
     {
       "name": "glad",
       "platform": "android",
