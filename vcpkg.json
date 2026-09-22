@@ -27,8 +27,8 @@
     },
     {
       "name": "freetype",
-      "default-features": false,
-    },    
+      "default-features": false
+    },
     "icu",
     "luajit",
     "lz4",
