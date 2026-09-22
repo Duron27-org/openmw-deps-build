@@ -25,7 +25,10 @@
       "name": "ffmpeg",
       "platform": "!android & !ios"
     },
-    "freetype",
+    {
+      "name": "freetype",
+      "default-features": false,
+    },    
     "icu",
     "luajit",
     "lz4",
