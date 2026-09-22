@@ -39,14 +39,6 @@
       "name": "freetype",
       "platform": "!android & !ios"
     },
-    {
-      "name": "glad",
-      "platform": "android"
-    },
-    {
-      "name": "glslang",
-      "platform": "android"
-    },
     "icu",
     "luajit",
     "lz4",
@@ -61,10 +53,6 @@
     },
     "openmw-osg",
     "sdl2",
-    {
-      "name": "spirv-cross",
-      "platform": "android"
-    },
     {
       "name": "unshield",
       "platform": "osx"
