@@ -12,6 +12,10 @@
     "libjpeg-turbo",
     "libpng",
     "libxml2",
+    {
+      "name": "freetype",
+      "default-features": false,
+    },
     "opengl-registry",
     "tiff",
     "zlib",
