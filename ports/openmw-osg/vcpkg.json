@@ -20,6 +20,15 @@
     "tiff",
     "zlib",
     {
+      "name": "glad",
+      "platform": "android",
+      "features": [
+        "gles2-api-32",
+        "egl",
+        "extensions"
+      ]
+    },
+    {
       "name": "vcpkg-cmake",
       "host": true
     },
